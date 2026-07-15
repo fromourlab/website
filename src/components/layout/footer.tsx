@@ -4,14 +4,14 @@ import { Container } from "@/components/ui/container";
 import { XIcon, GithubIcon } from "@/components/icons/social";
 
 const productLinks = [
-  { href: "#products", label: "File Weight Analyzer" },
-  { href: "#products", label: "Plugin Organizer" },
-  { href: "#products", label: "Coming Soon" },
+  { href: "/products/file-weight-analyzer", label: "File Weight Analyzer" },
+  { href: "/#products", label: "Plugin Organizer" },
+  { href: "/#products", label: "Coming Soon" },
 ];
 
 const companyLinks = [
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#pricing", label: "Pricing" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 const socialLinks = [
@@ -63,12 +63,12 @@ export function Footer() {
               <ul className="mt-4 flex flex-col gap-3">
                 {productLinks.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-sm text-muted transition-colors hover:text-foreground"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -78,12 +78,12 @@ export function Footer() {
               <ul className="mt-4 flex flex-col gap-3">
                 {companyLinks.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-sm text-muted transition-colors hover:text-foreground"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

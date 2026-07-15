@@ -9,9 +9,9 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { href: "#products", label: "Products" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#products", label: "Products" },
+  { href: "/#pricing", label: "Pricing" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function Navbar() {
@@ -65,7 +65,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="#pricing" size="md">
+          <Button href="/#pricing" size="md">
             Get started
           </Button>
         </div>
@@ -102,7 +102,7 @@ export function Navbar() {
                 </a>
               ))}
               <Button
-                href="#pricing"
+                href="/#pricing"
                 size="md"
                 className="mt-2 w-full"
                 onClick={() => setOpen(false)}
